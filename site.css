@@ -1,0 +1,38 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    /* Apply Google Font */
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    /* Set margins for the main container */
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    /* Style for headings */
+    background-color: #f0f0f0; /* Background color */
+    color: #333333; /* Font color */
+    border: 1px solid #D6A800; /* Border color */
+    padding: 10px; /* Padding inside the border */
+}
+
+a {
+    /* Style for links */
+    color: #0066cc; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    /* Style for links on hover */
+    color: #003366; /* Hover color */
+}
+
+a:visited {
+    /* Style for visited links */
+    color: #663399; /* Visited link color */
+}

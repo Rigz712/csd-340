@@ -1,0 +1,49 @@
+/* Styles for Assignment 3.3 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol, ul {
+    padding: 10px;
+    list-style-position: inside;
+}
+
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    font-weight: 300;
+}
+
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    list-style-type: upper-roman;
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container > div:last-child {
+    float: right;
+    margin-bottom: 20px;
+}

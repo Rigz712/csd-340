@@ -1,0 +1,88 @@
+/* Styles for bioSite project so far */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;              /* Light Grey background */
+    color: #333333;                         /* Dark Grey text */
+}
+
+header {
+    background-color: #800080;              /* Changing to purple from red, red was too bright*/
+    color: #FFD700;                         /* Yellow for header text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FFD700;                         /* Yellow for navigation links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    color: #800080;                         /* Purple for headings */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container img {
+    max-width: 300px;                          /* Ensures the image has a reasonable size */
+    height: auto;
+    margin-right: 20px;
+}
+
+.index-content {
+    display: flex;
+    align-items: center;
+}
+
+.index-content div {
+    flex: 1;
+}
+
+footer {
+    background-color: #800080;              /* Changing to purple from red, red was too bright*/
+    color: #FFD700;                         /* Yellow for footer text */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Hobbies page specific styles */
+.hobby {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hobby img {
+    width: 150px;                              /* Can adjust as I need 150 seems fine at the moment */
+    height: auto;
+    margin-right: 20px;
+}
+
+.hobby div {
+    flex: 1;
+}
+
+a {
+    color: #FFD700;                          /* Yellow for links */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #6B8E23; /* Olive Drab for horizontal lines */
+}
+
+.quote {
+    border-left: 4px solid #FFD700; /* Yellow for quote borders */
+    padding-left: 10px;
+    color: #6B8E23; /* Olive Drab for text within quotes */
+}

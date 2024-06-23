@@ -1,67 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;     /* Arial font */
+    margin: 0;                          /* Remove default margin */
+    padding: 0;                         /* Remove default margin and padding */
+    background-color: #f4f4f4;        /* Light Gray/white background */
 }
 
-#container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+#container {            /* Container for the page */
+    width: 80%;         /* Width of container */
+    margin: 0 auto;     /* Center the container */
+    text-align: center; /* Center the text */
 }
 
 h1 {
-    color: rgba(255, 69, 0, 0.8); /* Example color */
-    text-align: center;
-    margin-top: 20px;
+    color: rgba(255, 69, 0, 0.8); /* orange */
+    text-align: center; /* Center the header */
+    margin-top: 20px;   /* Space between top of page and header */
 }
 
 #image-gallery {
     text-align: center; /* Center the gallery */
-    margin-top: 10%;
+    margin-top: 10%;    /* Space between header and gallery */
 }
 
 .book {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    width: 30%; /* Adjust width as needed */
-    box-sizing: border-box;
-    display: inline-block;
-    text-align: center;
-    margin: 0; /* Remove margin between inline-block elements */
+    border: 1px solid #ccc; /* Light Gray border */
+    padding: 20px;            /* Space between border and content */
+    border-radius: 5px;       /* Rounded corners */
+    width: 30%;               /* Can Adjust Width of Books here */
+    box-sizing: border-box;   /* Include padding and border in width */
+    display: inline-block;    /* Display books in a row */
+    text-align: center;       /* Center the book */
+    margin: 0;                /* Remove margin between inline-block elements */
 }
 
 .book h3 {
-    color: rgba(60, 179, 113, 0.8); /* Example color */
-    text-align: center;
+    color: rgba(60, 179, 113, 0.8); /* Light Blue/Turquoise */
+    text-align: center;               /* Center the book title */
 }
 
 figure {
-    text-align: center;
-    margin: 0;
+    text-align: center; /* Center the image */
+    margin: 0;          /* Remove margin between inline-block elements */
 }
 
 figure img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;    /* Image width 100% of container */
+    height: auto;       /* Image height auto */
 }
 
 figcaption {
-    font-style: italic;
-    font-size: 0.75em;
-    color: rgba(70, 130, 180, 0.8); /* Example color */
-    margin-top: 10px;
+    font-style: italic; /* Italic font style */
+    font-size: 0.75em;  /* Smaller font size */
+    color: rgba(70, 130, 180, 0.8); /* fig caption color (Author) */
+    margin-top: 10px;   /* Space between image and caption */
 }
 
 a {
-    display: block;
-    margin-top: 20px;
-    color: #0000ff;
-    text-decoration: none;
+    display: block;         /* Display as block element */
+    margin-top: 20px;       /* Space between books */
+    color: #0000ff;       /* Blue */
+    text-decoration: none;  /* Remove underline */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover, cool feature I read about */
 }
+
+/* Finally have style positioned how I want it - centered and using inline-block Font looks good as of 6/16/24 */

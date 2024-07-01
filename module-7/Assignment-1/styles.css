@@ -1,0 +1,126 @@
+/* Styles for bioSite project so far */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0; /* Light Grey background */
+    color: #333333; /* Dark Grey text */
+}
+
+header {
+    background-color: #800080; /* Purple */
+    color: #FFD700; /* Yellow for header text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FFD700; /* Yellow for navigation links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+h1, h2, h3 {
+    color: #800080; /* Purple for headings */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container img {
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+    margin-right: 20px;
+}
+
+.index-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure flexibility on smaller screens */
+}
+
+.index-content div {
+    flex: 1;
+    margin: 10px;
+}
+
+footer {
+    background-color: #800080; /* Purple */
+    color: #FFD700; /* Yellow for footer text */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Hobbies page specific styles */
+.hobby {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure flexibility on smaller screens */
+}
+
+.hobby img {
+    width: 150px; /* 150px seems fine at the moment */
+    height: auto;
+    margin-right: 20px;
+}
+
+.hobby div {
+    flex: 1;
+    margin: 10px;
+}
+
+a {
+    color: #FFD700; /* Yellow for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #6B8E23; /* Olive Drab for horizontal lines */
+    margin: 20px 0;
+}
+
+.quote {
+    border-left: 4px solid #FFD700; /* Yellow for quote borders */
+    padding-left: 10px;
+    color: #6B8E23; /* Olive Drab for text within quotes */
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .index-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hobby {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}

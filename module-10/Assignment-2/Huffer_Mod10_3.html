@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function displayImage(imageFile) {
+            var largerImage = document.getElementById("mainImage");
+            var newNode = document.createElement("img");
+            newNode.id = "mainImage";
+            newNode.src = imageFile;
+            newNode.alt = "Large Image";
+            newNode.className = "mainImage";
+            largerImage.parentNode.replaceChild(newNode, largerImage);
+        }
+    </script>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <div>
+        <a href="#" onclick="displayImage('cave_01.jpg')">
+            <img border="0" name="cave" src="cave_02.jpg" alt="Cave Image">
+        </a>
+    </div>
+    <br />
+    <div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">
+        Click on the cave image to show the original variant.
+        <br />
+    </div>
+    <div>
+        <a href="#" onclick="displayImage('moon_01.jpg')">
+            <img border="0" name="moon" src="moon_02.jpg" alt="Moon Image">
+        </a>
+    </div>
+    <br />
+    <div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">
+        Click on the moon image to show the original variant.
+        <br />
+    </div>
+    <div id="mainImageContainer">
+        <img id="mainImage" src="cave_02.jpg" alt="Main Image" class="mainImage">
+    </div>
+</body>
+</html>

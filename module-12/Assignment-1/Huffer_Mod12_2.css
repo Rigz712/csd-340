@@ -1,0 +1,63 @@
+/* Styles for Assignment 3.3 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol, ul {
+    padding: 10px;
+    list-style-position: inside;
+}
+
+ol {
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container > div:last-child {
+    float: right;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+/* New styles for red boxes */
+#favoriteBooks {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#thingsLearned {
+    border: 2px dashed red;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}

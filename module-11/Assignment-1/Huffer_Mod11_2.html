@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .actions {
+            margin-top: 10px;
+        }
+        .actions button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .actions button:hover {
+            background-color: #45a049;
+        }
+        .actions input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: calc(100% - 22px); /* Center */
+        }
+        #displayArea {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <p>I've created an interactive To-Do List. Type in your first item in the text box, then click Add. Click the Display button to see current items in the list. Click on Delete Last Entry if you'd like to remove the last entry.</p>
+        <input type="text" id="itemInput" placeholder="Enter a new item">
+        <div class="actions">
+            <button onclick="addItem()">Add</button>
+            <button onclick="deleteLastItem()">Delete Last Entry</button>
+            <button onclick="displayItems()">Display</button>
+        </div>
+        <div id="displayArea"></div>
+    </div>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            let input = document.getElementById('itemInput');
+            let newItem = input.value;
+            if (newItem) {
+                items.push(newItem);
+                alert('Item: ' + newItem + ' Added at index ' + (items.length - 1));
+                input.value = '';
+                input.focus();
+            }
+        }
+
+        function deleteLastItem() {
+            if (items.length > 0) {
+                let removedItem = items.pop();
+                alert('Item: ' + removedItem + ' Removed');
+            } else {
+                alert('No items to delete');
+            }
+        }
+
+        function displayItems() {
+            let displayArea = document.getElementById('displayArea');
+            displayArea.innerHTML = '';
+            for (let i = 0; i < items.length; i++) {
+                displayArea.innerHTML += 'Item ' + (i + 1) + ' = ' + items[i] + '<br>';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Huffer_Mod12_2.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        
+        <div style="display: flex; justify-content: space-between;">
+            <!-- Left div -->
+            <div id="favoriteBooks" style="width: 45%;">
+                <h3>Top 10 Favorite Books</h3>
+                <button onclick="displayBooks('asc')">Top to Bottom</button>
+                <button onclick="displayBooks('desc')">Bottom to Top</button>
+                <ol id="bookList">
+                    <li>The Divine Comedy</li>
+                    <li>The Mountain Is You: Transforming Self-Sabotage Into Self-Mastery</li>
+                    <li>The Dance of Intimacy: A Woman's Guide to Courageous Acts of Change in Key Relationships</li>
+                    <li>Dracula</li>
+                    <li>Frankenstein</li>
+                    <li>Aristotle and Dante Discover the Mysteries of the Universe</li>
+                    <li>The Time of Contempt</li>
+                    <li>How to Love</li>
+                    <li>Waiting for the Barbarians</li>
+                    <li>The Complete Tales and Poems of Edgar Allan Poe</li>
+                </ol>
+            </div>
+            <!-- Right div -->
+            <div id="thingsLearned" style="width: 45%;">
+                <h3>5 Things I've Learned Since the Course Started</h3>
+                <ol class="roman">
+                    <li>Capital letters can be as readable as lowercase letters depending on context and usage.</li>
+                    <li>Reading on screens is harder than on paper, and proper font size varies by device type.</li>
+                    <li>Recognition is easier than recall for user interfaces, and successful designs use this principle.</li>
+                    <li>Emotional memories can be inaccurate, impacting user feedback and experience design.</li>
+                    <li>People scan web pages based on cultural reading patterns, using peripheral vision more than central vision.</li>
+                </ol>
+            </div>
+        </div>
+        
+        <!-- Bottom div -->
+        <div style="width: 100%; margin-top: 60%;">
+            <a href="../../index.html" style="float: right; margin-bottom: 20px;">Back to Landing Page</a>
+        </div>
+    </div>
+
+    <script>
+        // Array of book titles
+        const books = [
+            "The Divine Comedy",
+            "The Mountain Is You: Transforming Self-Sabotage Into Self-Mastery",
+            "The Dance of Intimacy: A Woman's Guide to Courageous Acts of Change in Key Relationships",
+            "Dracula",
+            "Frankenstein",
+            "Aristotle and Dante Discover the Mysteries of the Universe",
+            "The Time of Contempt",
+            "How to Love",
+            "Waiting for the Barbarians",
+            "The Complete Tales and Poems of Edgar Allan Poe"
+        ];
+
+        // Function to display books in ascending or descending order
+        function displayBooks(order) {
+            const bookList = document.getElementById('bookList');
+            let sortedBooks;
+
+            if (order === 'asc') {
+                sortedBooks = [...books];
+            } else {
+                sortedBooks = [...books].reverse();
+            }
+
+            // Clear existing list
+            bookList.innerHTML = '';
+
+            // Add sorted books to the list
+            sortedBooks.forEach(book => {
+                const li = document.createElement('li');
+                li.textContent = book;
+                bookList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
